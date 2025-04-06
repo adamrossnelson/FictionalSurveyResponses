@@ -19,14 +19,14 @@ Beta installation...
 
 ```powershell
 # Download the Python file
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/adamrossnelson/SurveyResponder/main/FictionalDataGenerator.py" -OutFile "FictionalDataGenerator.py"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/adamrossnelson/FictionalSurveyResponses/main/FictionalDataGenerator.py" -OutFile "FictionalDataGenerator.py"
 ```
 
 ### macOS/Linux
 
 ```bash
 # Download the Python file
-curl -O https://raw.githubusercontent.com/adamrossnelson/SurveyResponder/main/FictionalDataGenerator.py
+curl -O https://raw.githubusercontent.com/adamrossnelson/FictionalSurveyResponses/main/FictionalDataGenerator.py
 ```
 
 ## Quick Start
@@ -195,14 +195,14 @@ item_cols = [col for col in df.columns if '_' in col]
 corr_matrix = df[item_cols].corr()
 
 # Visualize correlation matrix using Seaborn
-plt.figure(figsize=(12, 10))
+plt.figure(figsize=(8, 7))
 sns.heatmap(corr_matrix, annot=False, cmap='coolwarm', vmin=-1, vmax=1, center=0)
 plt.title('Correlation Matrix of Survey Items', fontsize=16)
 plt.tight_layout()
 plt.show()
 
 # Visualize the distribution of factor values
-plt.figure(figsize=(15, 5))
+plt.figure(figsize=(8, 3))
 factor_cols = ['extraversion', 'agreeableness', 'conscientiousness']
 for i, factor in enumerate(factor_cols, 1):
     plt.subplot(1, 3, i)
@@ -395,13 +395,13 @@ get_data() -> pd.DataFrame
   year         = 2025,
   publisher    = {Up Level Data, LLC},
   version      = {1.0},
-  url          = {https://github.com/adamrossnelson/FictionalSurveyData}
+  url          = {https://github.com/adamrossnelson/FictionalSurveyResponses}
 }
 ```
 
 ### APA Format
 
-Nelson, A. R. (2025). *FictionalDataGenerator: Generate synthetic survey responses using random number generation* (Version 1.0) [Computer software]. Up Level Data, LLC. https://github.com/adamrossnelson/FictionalSurveyData
+Nelson, A. R. (2025). *FictionalDataGenerator: Generate synthetic survey responses using random number generation* (Version 1.0) [Computer software]. Up Level Data, LLC. https://github.com/adamrossnelson/FictionalSurveyResponses
 
 ## License
 

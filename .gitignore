@@ -106,6 +106,12 @@ Thumbs.db
 .RData
 .Rproj.user/
 
+# Allow specific example files
+!Examples/Ex3FactorPersonality.csv
+!Examples/Ex3FactorPersonality.ipynb
+!Examples/ExCustomerSatisfaction.csv
+!Examples/ExCustomerSatisfaction.ipynb
+
 # Temporary files
 tmp/
 temp/
