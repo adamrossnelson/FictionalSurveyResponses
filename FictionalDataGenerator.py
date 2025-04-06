@@ -156,8 +156,8 @@ class MakeData:
             # Generate base factor values
             factor_values = self._generate_factor_values(factor_config)
             
-            # Add the factor itself to the dataframe
-            df[factor_name] = factor_values
+            # Add the factor itself to the dataframe with a _raw suffix to distinguish from item names
+            df[f"{factor_name}_raw"] = factor_values
             
             # Generate items based on the factor
             items = self._generate_items(factor_values, factor_name, factor_config)
